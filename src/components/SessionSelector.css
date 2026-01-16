@@ -1,0 +1,82 @@
+.session-selector {
+  display: flex;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+  background: var(--surface);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+}
+
+.session-btn {
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: var(--space-sm) var(--space-lg);
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  background: transparent;
+  color: var(--text-secondary);
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  position: relative;
+}
+
+.session-btn:hover:not(.disabled) {
+  color: var(--text-primary);
+  background: var(--surface-hover);
+}
+
+.session-btn.active {
+  background: linear-gradient(135deg, var(--session-gradient-start), var(--session-gradient-end));
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px var(--session-glow);
+}
+
+.session-btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.session-icon {
+  font-size: 1.125rem;
+}
+
+.session-label {
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .session-selector {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .session-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .session-label {
+    display: none;
+  }
+
+  .session-icon {
+    font-size: 1.5rem;
+  }
+
+  .session-selector {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .session-btn {
+    width: auto;
+    padding: var(--space-md);
+  }
+}
