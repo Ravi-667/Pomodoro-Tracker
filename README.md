@@ -2,6 +2,8 @@
 
 A beautiful and modern Pomodoro Timer application built with React and Vite. Stay focused and boost your productivity using the proven Pomodoro Technique!
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://pomodoro-tracker-five.vercel.app/)
+
 ![Pomodoro Tracker](https://img.shields.io/badge/React-18.3-blue) ![Vite](https://img.shields.io/badge/Vite-6.0-purple) ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## ✨ Features
